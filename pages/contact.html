@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="../css/style.css" rel="stylesheet" />
-</head>
-<body>
+   
+  </head>
+  <body>
     <div class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="/pages/about.html">About</a>
-        <a href="/pages/contact.html">Contact</a>
-        <a href="#hebrew">עברית</a>
-        <a href="#russian">русский</a>
+      <a href="../index.html">Home</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+      <a href="#hebrew">עברית</a>
+      <a href="#russian">русский</a>
     </div>
     <div>Contact Page</div>
+
+
     <div class="card">
-        <form
-        action="https://formspree.io/f/mvolvwja"
-        method="POST"
-        >
-            <ul>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
-                <label>
-                Your email:
-                <input type="email" name="email"><br><br>
-                </label>
-                <label>
-                Comment:
-                <textarea name="message"></textarea><br><br>
-                </label>
-                <button type="submit">Send</button>
-            </ul>
-        </form>
+      <form action="https://formspree.io/f/mvolvwja" method="POST">
+        <ul>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" required /><br/><br/>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"  /><br/><br/>
+          <label>
+            Your email:
+            <input type="email" id="emailInfo" name="email" required /><br /><br/>
+          </label>
+          <label>
+            Comment:
+            <textarea name="message" id="msg" required></textarea><br/><br/> <! -- Information in a non text form? -->
+          </label>
+          <button type="submit" class="contactbtn" id="submitBtn">Send</button>
+        </ul>
+      </form>
     </div>
-</body>
+    <footer>
+      <p id="footermsg"></p>
+    </footer>
+    <script src="../js/contact.js"></script>
+    <script src="../js/footer.js"></script>
+  </body>
 </html>

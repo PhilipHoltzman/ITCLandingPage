@@ -1,78 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="../css/style.css" rel="stylesheet" />
-    <script src="../js/about.js"></script> 
-</head>
-<body>
+    
+  </head>
+  <body>
     <div class="navbar">
-        <a href="../index.html">Home</a>
-        <a href="/pages/about.html">About</a>
-        <a href="/pages/contact.html">Contact</a>
-        <a href="#hebrew">עברית</a>
-        <a href="#russian">русский</a>
+      <a href="../index.html">Home</a>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+      <a href="#hebrew">עברית</a>
+      <a href="#russian">русский</a>
     </div>
     <div>About Page</div>
 
     <div class="card">
-        <h1>About me.. </h1>
-        <h3>Currently training to be a fullstack developer with ITC because I heard they are the best..</h3>
-        <h3>... I have been programming for years and time to get serious about it.. </h3>
-        
-        <ul>
-            <h4>Before.. </h4>
-            <p>I originally studdied biotechnology and scienteific instrumentation</p>
-            <p>I moved on to be a composer/producer, signed to Sony Music, working with BBC Channel 4, HBO, and Netflix</p>
-            <p>I became a Business English Teacher and Translator in Mexico and Colombia for Western Union, Prudential, and H&M </p>
-            <p>... a few other things as well...</p>
-        </ul> 
+      <h1>About me..</h1>
+      <h3>
+        In Tel Aviv, currently training to be a fullstack developer with ITC because I heard
+        they are the best..
+      </h3>
+      <h3>
+        ... I have been programming for years and I feel it is time to get serious about it..
+      </h3>
+    </div>
+    <div class="card">
+      <ul>
+        <h4>Before..</h4>
+        <p>
+          I originally studied biotechnology and scientific instrumentation
+        </p>
+        <p>
+          I moved on to be a composer/producer, signed to Sony Music, working
+          with BBC Channel 4, HBO, and Netflix.
+        </p>
+        <p>
+          I became a Business English Teacher and Translator in Mexico and
+          Colombia for Western Union, Prudential, and H&M
+        </p>
+        <p>... a few other things as well...</p>
+      </ul>
     </div>
 
     <div class="card">
-
-        <h1>Where I have lived:</h1>
-        
-         <!-- Slideshow container -->
-    <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">San Francisco, California</div>
-      <img src="../images/sanfrancisco.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">Caldas, Colombia</div>
-      <img src="../images/caldas.jpg" style="width:100%">
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">Cluj, Romania</div>
-      <img src="../images/cluj.jpg" style="width:100%">
-    </div>
-  
-    <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-    <br>
-  
-  <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div> 
-
-
-
-
+      <h1>Where I have lived:</h1>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.271956552207!2d-75.62265958515306!3d6.094022495587164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46842819134275%3A0xffac11585176098d!2sCaldas%2C%20Antioquia%2C%20Colombia!5e0!3m2!1sen!2sil!4v1651465237829!5m2!1sen!2sil"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
 
+    <div class="btns">
+    
+      <button class="btn prev" id="prev" disabled onclick="prevBtn()">PREV</button>
+      <button class="btn next" id="next" onclick="nextBtn()">NEXT</button>
+    </div>
 
-</body>
+    <footer>
+      <p id="footermsg"></p>
+    </footer>
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/maps.js"></script>
+  </body>
 </html>

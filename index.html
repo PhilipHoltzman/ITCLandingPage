@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>ITC Precourse</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="./css/style.css" rel="stylesheet" />
   </head>
   <body>
@@ -17,12 +18,6 @@
 
 
       <div class="card">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
         <img
           id="profile-image"
           src="./images/profile.jpg"
@@ -35,37 +30,61 @@
         <h1 id="profile-name">Philip Holtzman</h1>
         <h4>.:ITC Fullstack Development:.</h4>
       </div>
-
       <div class="card">
         <ul>
-          <div class="card">
-          <a href="https://www.linkedin.com/in/poisonarena/">
-          <img src="/images/li2.png" width="200" height="200" alt="" srcset="" onmouseover="this.src='/images/li1.png'" onmouseout="this.src='/images/li2.png'" >
-          </a>
+          <div class="card"> <! -- Added new tab functionality and prev tab hijack protection -->
+            <a href="https://www.linkedin.com/in/poisonarena/" target="_blank" rel="noopener noreferrer">
+              <img 
+                class="linkImage"
+                src="/images/li2.png"
+                width="200"
+                height="200"
+                alt=""
+                srcset=""
+                onmouseover="this.src='/images/li1.png'"
+                onmouseout="this.src='/images/li2.png'"
+              />
+            </a>
           </div>
 
           <div class="card">
-          <a href="https://github.com/PhilipHoltzman">
-          <img src="/images/github_icon.png" width="200" height="200" alt="" srcset="" onmouseover="this.src='/images/github_icon2.png'" onmouseout="this.src='/images/github_icon.png'" >
-          </a>
+            <a href="https://github.com/PhilipHoltzman" target="_blank" rel="noopener noreferrer">
+              <img
+                class="linkImage"
+                src="/images/github_icon.png"
+                width="200"
+                height="200"
+                alt=""
+                srcset=""
+                onmouseover="this.src='/images/github_icon2.png'"
+                onmouseout="this.src='/images/github_icon.png'"
+              />
+            </a>
           </div>
 
           <div class="card">
-          <a href="https://stackoverflow.com/users/edit/2865181">
-          <img src="/images/stackoverflow_icon.png" width="200" height="200" alt="" srcset="" onmouseover="this.src='/images/stackoverflow_icon2.png'" onmouseout="this.src='/images/stackoverflow_icon.png'" >
-          </a>
+            <a href="https://stackoverflow.com/users/edit/2865181" target="_blank" rel="noopener noreferrer">
+              <img
+                class="linkImage"
+                src="/images/stackoverflow_icon.png"
+                width="200"
+                height="200"
+                alt=""
+                srcset=""
+                onmouseover="this.src='/images/stackoverflow_icon2.png'"
+                onmouseout="this.src='/images/stackoverflow_icon.png'"
+              />
+            </a>
           </div>
-        </ul> 
+        </ul>
       </div>
     </section>
     <footer>
-      <div>&#169; Israel Tech Challenge</div>
-      
+      <p id="footermsg"></p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./js/footer.js"></script>
   </body>
 </html>
-
 
 <!
 TODO:  
@@ -75,4 +94,3 @@ Step 5, 9 10
 Swap BG image depending if in mobile mode
 
 >
-
